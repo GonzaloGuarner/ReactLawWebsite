@@ -38,7 +38,7 @@ const ContactInfo: React.FC<Props> = ({
       <div key="phone" className="flex items-start space-x-3">
         <Phone
           size={22}
-          className="text-green-600 mt-1 flex-shrink-0"
+          className="text-white mt-1 flex-shrink-0"
           aria-hidden="true"
         />
         <div>
@@ -47,7 +47,7 @@ const ContactInfo: React.FC<Props> = ({
           )}
           <a
             href={telHref}
-            className={`${baseTextColor} hover:text-green-700 transition-colors`}
+            className={`${baseTextColor} hover:text-primary transition-colors`}
           >
             {phone}
           </a>
@@ -58,7 +58,7 @@ const ContactInfo: React.FC<Props> = ({
       <div key="email" className="flex items-start space-x-3">
         <Mail
           size={22}
-          className="text-green-600 mt-1 flex-shrink-0"
+          className="text-white mt-1 flex-shrink-0"
           aria-hidden="true"
         />
         <div>
@@ -67,7 +67,7 @@ const ContactInfo: React.FC<Props> = ({
           )}
           <a
             href={mailHref}
-            className={`${baseTextColor} hover:text-green-700 transition-colors break-all`}
+            className={`${baseTextColor} hover:text-primary transition-colors break-all`}
           >
             {email}
           </a>
@@ -78,7 +78,7 @@ const ContactInfo: React.FC<Props> = ({
       <div key="address" className="flex items-start space-x-3">
         <MapPin
           size={22}
-          className="text-green-600 mt-1 flex-shrink-0"
+          className="text-primary mt-1 flex-shrink-0"
           aria-hidden="true"
         />
         <div>
@@ -93,7 +93,7 @@ const ContactInfo: React.FC<Props> = ({
       <div key="whatsapp" className="flex items-start space-x-3">
         <MessageCircle
           size={22}
-          className="text-green-600 mt-1 flex-shrink-0"
+          className="text-primary mt-1 flex-shrink-0"
           aria-hidden="true"
         />
         <div>
@@ -104,7 +104,7 @@ const ContactInfo: React.FC<Props> = ({
             href={whatsHref}
             target="_blank"
             rel="noopener noreferrer"
-            className={`${baseTextColor} hover:text-green-700 transition-colors`}
+            className={`${baseTextColor} hover:text-primary transition-colors`}
           >
             Disponible para consulta directa
           </a>

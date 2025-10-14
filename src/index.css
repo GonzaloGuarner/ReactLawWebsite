@@ -1,6 +1,5 @@
 /* src/index.css */
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,6 +17,24 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  @apply bg-white text-black;
+}
+
+/* h1 {
+  color: theme('colors.primary');
+}
+ h2, h3 {
+  color: theme('colors.secondary');
+} */
+
 #root {
-  background-color: white;
+  background-color: theme('colors.white');
+}
+
+/* Focus styles for accessibility. Outline when pressing tab*/
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid  theme('colors.primary');
+  outline-offset: 2px;
 }

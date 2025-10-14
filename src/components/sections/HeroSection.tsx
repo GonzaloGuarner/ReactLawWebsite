@@ -1,12 +1,8 @@
 // components/ui/HeroSection.tsx
 import React from 'react';
+import type { HeroProps } from '../../types/types';
 
-interface HeroProps {
-  title: string;
-  tagline: string;
-  ctaText: string;
-  backgroundImage: string;
-}
+
 
 const HeroSection: React.FC<HeroProps> = ({ title, tagline, ctaText, backgroundImage }) => (
   <section
@@ -17,7 +13,7 @@ const HeroSection: React.FC<HeroProps> = ({ title, tagline, ctaText, backgroundI
     <div className="relative z-10 text-center text-white max-w-3xl mx-auto">
       <h1 className="text-5xl md:text-7xl font-serif mb-6">{title}</h1>
       <p className="text-xl mb-8 font-serif">{tagline}</p>
-      <button className="font-serif bg-green-600 hover:bg-green-700 px-6 py-3 rounded-md font-semibold transition">
+      <button className="font-serif bg-primary hover:bg-primary_focus px-6 py-3 rounded-md font-semibold transition">
         {ctaText}
       </button>
     </div>
