@@ -25,7 +25,6 @@ export interface NavBarProps {
   isMenuOpen: boolean;
   setIsMenuOpen: (val: boolean) => void;
   navigation: NavLink[];
-  scrollToSection: (href: string) => void;
 }
 
 
@@ -51,6 +50,7 @@ export interface PracticeArea {
   title: string;
   description: string;
   image: string;
+  href: string;
 }
 
 export interface ContactFormProps {

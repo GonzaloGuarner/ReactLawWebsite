@@ -5,14 +5,22 @@ import './index.css';
 import { HelmetProvider } from 'react-helmet-async';
 import LawWebsite from './LawWebsite';
 import PublicationsPage from './components/pages/publications';
+import DerechoAlimentarioPage from './components/pages/derechoAlimentario';
+import DerechoMercantilPage from './components/pages/derechoMercantil';
+import DerechoConsumoPage from './components/pages/derechoConsumo';
+import ScrollToTop from './components/utils/ScrollToTop';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<LawWebsite />} />
           <Route path="/publications" element={<PublicationsPage />} />
+          <Route path="/derecho-alimentario" element={<DerechoAlimentarioPage />} />
+          <Route path="/derecho-mercantil" element={<DerechoMercantilPage />} />
+          <Route path="/derecho-consumo" element={<DerechoConsumoPage />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

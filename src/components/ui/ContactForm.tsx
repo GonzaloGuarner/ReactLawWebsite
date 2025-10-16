@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { X } from 'lucide-react'; 
+import { X } from 'lucide-react';
 import type { ContactFormProps } from '../../types/types';
 import InputField from './InputField';
 
@@ -20,26 +20,29 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
+    if (!formData.email.includes('@')) {
+      //setError('Please enter a valid email address.'); setError is not found or does not exist
+      return;
+    }
     e.preventDefault(); // Added preventDefault for correct form behavior
-    console.log('Form submitted:', formData);
     alert('Thank you for your message. We will contact you soon.');
     setFormData({ name: '', phone: '', email: '', message: '' });
     onClose();
   };
 
   useEffect(() => {
-  const handleEscape = (e: KeyboardEvent) => {
-    if (e.key === 'Escape') onClose();
-  };
-  document.addEventListener('keydown', handleEscape);
-  return () => document.removeEventListener('keydown', handleEscape);
-}, [onClose]);
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [onClose]);
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full">
         <div className="flex justify-between items-center mb-6">
-          <h3 className="text-2xl font-bold text-gray-800">Contact Us</h3>
+          <h3 className="text-2xl font-bold text-gray-800">Contacto</h3>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-600">
             <X size={24} />
           </button>

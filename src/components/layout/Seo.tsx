@@ -10,7 +10,9 @@ interface SeoProps {
 }
 
 const Seo: React.FC<SeoProps> = ({ title, description }) => {
-    const absoluteImageUrl = `${window.location.origin}${profileImage}`;
+  if (typeof window === 'undefined') return '';
+  const origin = window.location.origin;
+  const absoluteImageUrl = origin ? `${origin}${profileImage}` : profileImage;
     return (
   <Helmet>
     <html lang="es" />

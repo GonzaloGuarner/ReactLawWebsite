@@ -20,13 +20,13 @@ html, body {
 body {
   @apply bg-white text-black;
 }
-
-/* h1 {
-  color: theme('colors.primary');
+.btn-primary {
+  @apply bg-primary text-white rounded-lg py-3 px-4 shadow hover:bg-primary_focus transition-all;
 }
- h2, h3 {
-  color: theme('colors.secondary');
-} */
+.text-interactive {
+  @apply transition-colors hover:text-primary;
+}
+
 
 #root {
   background-color: theme('colors.white');

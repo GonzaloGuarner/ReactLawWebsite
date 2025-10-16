@@ -10,12 +10,13 @@ import HeroSection from './components/sections/HeroSection';
 import WelcomeSection from './components/sections/WelcomeSection';
 import PracticeSection from './components/sections/PracticeSection';
 import ContactSection from './components/sections/ContactSection';
-import FooterSection from './components/sections/FooterSection';
+import FooterSection from './components/layout/FooterSection';
 
 import ContactForm from './components/ui/ContactForm';
 import FloatingButtons from './components/ui/FloatingButtons';
 
 import { useDynamicTitle } from './components/hooks/useDynamicTitle';
+import { useScrollDetection } from './components/hooks/useScrollDetection';
 
 
 // =================================================================
@@ -24,34 +25,12 @@ import { useDynamicTitle } from './components/hooks/useDynamicTitle';
 const LawWebsite: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          setIsScrolled(window.scrollY > 30);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const isScrolled = useScrollDetection(30);
 
 
   useDynamicTitle(siteConfig.siteName);
 
-  // FIX: Parameter 'href' explicitly typed as string
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Metadata */}
@@ -62,7 +41,6 @@ const LawWebsite: React.FC = () => {
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         navigation={siteConfig.navigation}
-        scrollToSection={scrollToSection}
       />
 
       {/* Hero Section */}

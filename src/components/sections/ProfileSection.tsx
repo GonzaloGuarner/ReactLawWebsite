@@ -11,7 +11,6 @@ const ProfileSection: React.FC<Props> = ({ lawyer }) => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-        {/* Text */}
         <div className="bg-gray-50 p-8 rounded-lg shadow-sm">
           <h2 className="font-sans text-3xl md:text-4xl font-semibold text-gray-800 mb-6">
             {lawyer.name}
@@ -45,7 +44,6 @@ const ProfileSection: React.FC<Props> = ({ lawyer }) => (
           </div>
         </div>
 
-        {/* Image */}
         <div className="text-center">
           <img
             src={profileImage}

@@ -16,6 +16,7 @@ export function useDynamicTitle(
     threshold: number = .8
 ): void {
     useEffect(() => {
+        if (typeof document === 'undefined') return;
         const sections = document.querySelectorAll(selector);
         if (!sections.length) return;
 

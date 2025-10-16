@@ -14,21 +14,21 @@ const contact = {
 const siteConfig: SiteConfig = {
   siteName: "FOOD MESSAGE",
   tagline: "Asesoría legal y regulatoria especializada en el sector alimentario",
-  description: "Food Message es un proyecto liderado por Silvia Bañares, abogada especializada en derecho alimentario, publicidad y consumo, con más de quince años de experiencia asesorando a empresas, instituciones y agencias del sector alimentario en materia legal y regulatoria.",
+  description: "Food Message es un proyecto liderado por Silvia Bañares, abogada especializada en derecho alimentario, publicidad y consumo, con más de veinticinco años de experiencia asesorando a empresas, instituciones y agencias del sector alimentario en materia legal y regulatoria.",
 
   navigation: [
-    { name: 'Profile', href: '#profile' },
+    { name: 'Perfil', href: '#profile' },
     {
-      name: 'Practices',
+      name: 'Servicios',
       href: '#practices',
       subLinks: [
-        { name: 'Derecho Alimentario', href: '#alimentario' },
-        { name: 'Derecho Mercantil', href: '#mercantil' },
-        { name: 'Derecho de Consumo', href: '#consumo' }
+        { name: 'Derecho Alimentario', href: '/derecho-alimentario' },
+        { name: 'Derecho Mercantil', href: '/derecho-mercantil' },
+        { name: 'Derecho de Consumo', href: '/derecho-consumo' }
       ]
     },
-    { name: 'Publications', href: '/publications' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Publicaciones', href: '/publications' },
+    { name: 'Contacto', href: '#contact' }
   ],
 
   lawyer: {
@@ -41,18 +41,18 @@ const siteConfig: SiteConfig = {
       "Doctora en Derecho Mercantil por la Universidad de Barcelona.",
       "Mediadora inscrita en el Ilustre Colegio de Abogados de Barcelona (ICAB).",
       "Miembro del Ilustre Colegio de Abogados de Barcelona (ICAB).",
-      "Associació Catalana Ciències de l’Alimentació (ACCA).",
+      "Associació Catalana Ciències de l'Alimentació (ACCA).",
       "Asociación Iberoamericana para el Derecho Alimentario (AIBADA).",
       "Centro Europeo para el Derecho del Consumo."
     ],
     languages: "",
-    bio: "Silvia Bañares es abogada experta en derecho alimentario, publicidad y consumo. Es licenciada y doctora en Derecho Mercantil por la Universidad de Barcelona y mediadora inscrita en el Colegio de Abogados de Barcelona. Actualmente ejerce en Barcelona, centrando su actividad en el derecho alimentario y la docencia. Durante más de treinta años ha asesorado a empresas alimentarias, instituciones y agencias de publicidad. Ha publicado diversos artículos y libros sobre legislación alimentaria e imparte conferencias y seminarios sobre las últimas novedades en el sector."
+    bio: "Silvia Bañares es abogada experta en derecho alimentario, publicidad y consumo. Es licenciada y doctora en Derecho Mercantil por la Universidad de Barcelona y mediadora inscrita en el Colegio de Abogados de Barcelona. Actualmente ejerce en Barcelona, centrando su actividad en el derecho alimentario y la docencia. Durante más de veinticinco años ha asesorado a empresas alimentarias, instituciones y agencias de publicidad. Ha publicado diversos artículos y libros sobre legislación alimentaria e imparte conferencias y seminarios sobre las últimas novedades en el sector."
   },
 
   hero: {
     title: "FOOD MESSAGE",
     tagline: "Asesoría legal y regulatoria especializada en el sector alimentario",
-    ctaText: "Schedule a Consultation",
+    ctaText: "Programe una consulta",
     backgroundImage: "https://images.unsplash.com/photo-1521791055366-0d553872125f?w=1200"
   },
 
@@ -62,17 +62,20 @@ const siteConfig: SiteConfig = {
     {
       title: "Derecho Alimentario",
       description: "Cumplimiento de la normativa alimentaria española y europea: etiquetado, seguridad, autorizaciones y declaraciones nutricionales.",
-      image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&h=300&fit=crop",
+      href: '/derecho-alimentario'
     },
     {
       title: "Derecho Mercantil",
       description: "Asesoramiento jurídico para sociedades, contratos comerciales, y resolución de conflictos empresariales.",
-      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop",
+      href: '/derecho-mercantil'
     },
     {
       title: "Derecho de Consumo",
       description: "Defensa y cumplimiento de la normativa de consumo, cláusulas abusivas, publicidad y derechos del consumidor.",
-      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop"
+      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop",
+      href: '/derecho-consumo'
     }
   ],
 

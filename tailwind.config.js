@@ -19,6 +19,7 @@ export default {
         detail: theme.colors.detail,
         black: theme.colors.black,
         white: theme.colors.white,
+        page_white: theme.colors.page_white,
       },
     },
   },

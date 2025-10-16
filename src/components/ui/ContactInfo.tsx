@@ -38,7 +38,7 @@ const ContactInfo: React.FC<Props> = ({
       <div key="phone" className="flex items-start space-x-3">
         <Phone
           size={22}
-          className="text-white mt-1 flex-shrink-0"
+          className="text-primary mt-1 flex-shrink-0"
           aria-hidden="true"
         />
         <div>
@@ -58,7 +58,7 @@ const ContactInfo: React.FC<Props> = ({
       <div key="email" className="flex items-start space-x-3">
         <Mail
           size={22}
-          className="text-white mt-1 flex-shrink-0"
+          className="text-primary mt-1 flex-shrink-0"
           aria-hidden="true"
         />
         <div>
