@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Mail, MessageCircle, Phone } from 'lucide-react';
+import React, { useState } from 'react';
 import siteConfig from './config/siteConfig';
 
 import Seo from './components/layout/Seo';
@@ -27,9 +26,7 @@ const LawWebsite: React.FC = () => {
   const [showContactForm, setShowContactForm] = useState(false);
   const isScrolled = useScrollDetection(30);
 
-
   useDynamicTitle(siteConfig.siteName);
-
 
   return (
     <div className="min-h-screen bg-white">
