@@ -4,17 +4,17 @@ import { Mail, MessageCircle, Phone } from 'lucide-react';
 
 
 const contact = {
-  phone: "+34 609 33 90 50",
+  phone: "+34 937 595 171",
   email: "info@food-message.com",
   address: "Barcelona, Spain",
-  whatsapp: "34609339050",
+  whatsapp: "34937595171",
   linkedin: "https://www.linkedin.com/in/silviabanaresabogado/"
 };
 
 const siteConfig: SiteConfig = {
   siteName: "FOOD MESSAGE",
   tagline: "Asesoría legal y regulatoria especializada en el sector alimentario",
-  description: "Food Message es un proyecto liderado por Silvia Bañares, abogada especializada en derecho alimentario, publicidad y consumo, con más de veinticinco años de experiencia asesorando a empresas, instituciones y agencias del sector alimentario en materia legal y regulatoria.",
+  description: "Food Message es un proyecto liderado por Silvia Bañares, abogada especializada en derecho alimentario, publicidad y consumo, con más de veinticinco años de experiencia asesorando a empresas, organizaciones y agencias del sector alimentario en el ámbito legal y regulatorio.",
 
   navigation: [
     { name: 'Perfil', href: '#profile' },
@@ -37,9 +37,8 @@ const siteConfig: SiteConfig = {
     birthPlace: "",
     admitted: "",
     education: [
-      "Abogada en ejercicio por el Ilustre Colegio de Abogados de Barcelona.",
+      "Abogada en ejercicio por el Ilustre Colegio de Abogados de Barcelona (ICAB).",
       "Doctora en Derecho Mercantil por la Universidad de Barcelona.",
-      "Mediadora inscrita en el Ilustre Colegio de Abogados de Barcelona (ICAB).",
       "Miembro del Ilustre Colegio de Abogados de Barcelona (ICAB).",
       "Associació Catalana Ciències de l'Alimentació (ACCA).",
       "Asociación Iberoamericana para el Derecho Alimentario (AIBADA).",

@@ -51,7 +51,7 @@ const ProfileSection: React.FC<Props> = ({ lawyer }) => (
             loading="lazy"
             className="w-50 h-60 object-contain rounded-[5%] mx-auto mb-6 border-[6px] border-primary shadow-md bg-white"
           />
-          <p className="text-gray-600 leading-relaxed text-sm max-w-md mx-auto">
+          <p className="text-gray-600 leading-relaxed max-w-md mx-auto">
             {lawyer.bio}
           </p>
         </div>

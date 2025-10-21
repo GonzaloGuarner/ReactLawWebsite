@@ -25,10 +25,11 @@ const DerechoAlimentarioPage: React.FC = () => {
             Derecho Alimentario
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Asesoramos a empresas del sector alimentario en cumplimiento normativo,
-            etiquetado, seguridad alimentaria y regulaciones europeas. Nuestra
-            práctica combina el conocimiento técnico del producto con la precisión
-            jurídica necesaria para garantizar el cumplimiento de la legislación vigente.
+            Asesoramos a empresas alimentarias en la normativa sectorial que les afecta, asi como
+            en todo lo relativo a seguridad alimentaria, etiquetado y promoción de productos, y
+            regulación internacional. Nuestra práctica combina el conocimiento técnico del
+            producto con la precisión jurídica necesaria para garantizar el cumplimiento de la
+            legislación vigente.
           </p>
         </SectionContainer>
 
@@ -45,8 +46,9 @@ const DerechoAlimentarioPage: React.FC = () => {
           <div className="bg-gray-50 rounded-xl p-8 shadow hover:shadow-md transition">
             <h2 className="text-2xl font-semibold text-primary mb-3">Etiquetado y Publicidad</h2>
             <p>
-              Asesoramos en el diseño y revisión de etiquetas, declaraciones nutricionales
-              y alegaciones de salud para evitar sanciones y asegurar transparencia con el consumidor.
+              Asesoramos en el diseño y revisión de etiquetas, declaraciones nutricionales y
+propiedades saludables; buscamos minimizar los riesgos para las empresas , proteger
+la salud de los consumidores y garantizar la transparencia de la información alimentaria
             </p>
           </div>
 

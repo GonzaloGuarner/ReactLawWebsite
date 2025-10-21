@@ -44,7 +44,8 @@ const DerechoMercantilPage: React.FC = () => {
           </div>
           <div className="bg-gray-50 rounded-xl p-8 shadow hover:shadow-md transition">
             <h2 className="text-2xl font-semibold text-primary mb-3">Fusiones y Adquisiciones</h2>
-            <p>Asesoramiento integral durante procesos de compraventa y reorganización empresarial.</p>
+            <p>Asesoramiento integral durante procesos de compraventa y reorganización
+empresarial de industrias alimentarias.</p>
           </div>
         </SectionContainer>
       </main>

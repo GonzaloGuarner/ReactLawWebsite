@@ -32,19 +32,19 @@ const DerechoConsumoPage: React.FC = () => {
         <SectionContainer className="grid md:grid-cols-2 gap-10">
           <div className="bg-gray-50 rounded-xl p-8 shadow hover:shadow-md transition">
             <h2 className="text-2xl font-semibold text-primary mb-3">Reclamaciones de Consumo</h2>
-            <p>Gestión y defensa de reclamaciones individuales o colectivas ante organismos competentes.</p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Gestión y defensa de reclamaciones individuales o colectivas ante organismos competentes.</p>
           </div>
           <div className="bg-gray-50 rounded-xl p-8 shadow hover:shadow-md transition">
             <h2 className="text-2xl font-semibold text-primary mb-3">Publicidad y Prácticas Comerciales</h2>
-            <p>Revisión de campañas y promociones para garantizar su conformidad con la normativa de consumo.</p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Revisión de campañas y promociones para garantizar su conformidad con la normativa alimentaria y de consumo.</p>
           </div>
           <div className="bg-gray-50 rounded-xl p-8 shadow hover:shadow-md transition">
             <h2 className="text-2xl font-semibold text-primary mb-3">Cláusulas Abusivas</h2>
-            <p>Identificación y eliminación de cláusulas que vulneren los derechos del consumidor.</p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Identificación y subsanación de cláusulas que vulneren los derechos del consumidor.</p>
           </div>
           <div className="bg-gray-50 rounded-xl p-8 shadow hover:shadow-md transition">
             <h2 className="text-2xl font-semibold text-primary mb-3">Protección de Datos y Privacidad</h2>
-            <p>Asesoramiento sobre tratamiento de datos personales y cumplimiento del RGPD.</p>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">Asesoramiento sobre tratamiento de datos personales y cumplimiento del RGPD.</p>
           </div>
         </SectionContainer>
       </main>
