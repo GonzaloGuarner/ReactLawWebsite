@@ -26,10 +26,10 @@ npm run preview
 src/
   components/
     layout/       # NavBar, Footer, SEO
-    pages/        # Individual pages (Derecho Alimentario, etc.)
-    sections/     # Home page sections Hero, PracticeSection, etc.
+    pages/        
+    sections/     # Home page sections 
     ui/           # Reusable UI primitives
-    hooks/        # Shared logic
+    hooks/        
   config/
     siteConfig.ts # Text, localization, navigation
   types/
@@ -39,7 +39,7 @@ src/
 
 ## Styling
 
-TailwindCSS is used for styling. Common utilities are wrapped into reusable components in `ui/`. Avoid repeating long class strings.
+TailwindCSS is used for styling. Common utilities are wrapped into reusable components in `ui/`.
 
 ---
 

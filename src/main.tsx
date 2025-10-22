@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
 import { HelmetProvider } from 'react-helmet-async';
-import LawWebsite from './LawWebsite';
+import HomePage from './components/pages/homePage';
 import PublicationsPage from './components/pages/publications';
 import DerechoAlimentarioPage from './components/pages/derechoAlimentario';
 import DerechoMercantilPage from './components/pages/derechoMercantil';
@@ -16,7 +16,7 @@ createRoot(document.getElementById('root')!).render(
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<LawWebsite />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/publications" element={<PublicationsPage />} />
           <Route path="/derecho-alimentario" element={<DerechoAlimentarioPage />} />
           <Route path="/derecho-mercantil" element={<DerechoMercantilPage />} />
