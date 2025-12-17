@@ -1,6 +1,6 @@
 # Food Message — Law Website
 
-Frontend for **Food Message**, a React + TypeScript + Vite site for a lawyer specializing in food law, commercial law and consumer law. Deployed using Vercel at:  https://food-message-website.vercel.app/ (may migrate to replit/netlify)
+Frontend for **Food Message**, a React + TypeScript + Vite site for a lawyer specializing in food law, commercial law and consumer law. Deployed using Netlify at: https://food-message-test.netlify.app/ and using Vercel at:  https://food-message-website.vercel.app/ 
 
 ---
 
