@@ -7,7 +7,7 @@ const contact = {
   phone: "+34 937 595 171",
   email: "info@food-message.com",
   address: "Barcelona, Spain",
-  whatsapp: "34606785052",
+  whatsapp: "34609339050",
   linkedin: "https://www.linkedin.com/in/silviabanaresabogado/"
 };
 
