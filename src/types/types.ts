@@ -38,6 +38,7 @@ export interface HeroProps {
   title: string;
   tagline: string;
   ctaText: string;
+  ctaHref?: string;
   backgroundImage: string;
 }
 

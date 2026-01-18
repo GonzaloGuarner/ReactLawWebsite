@@ -52,6 +52,7 @@ const siteConfig: SiteConfig = {
     title: "FOOD MESSAGE",
     tagline: "Asesoría legal y regulatoria especializada en el sector alimentario",
     ctaText: "Programe una consulta",
+    ctaHref: "#contact",
     backgroundImage: "https://images.unsplash.com/photo-1521791055366-0d553872125f?w=1200"
   },
 
