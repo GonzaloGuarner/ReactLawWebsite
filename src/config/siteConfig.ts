@@ -4,7 +4,7 @@ import { Mail, MessageCircle, Phone } from 'lucide-react';
 
 
 const contact = {
-  phone: "+34 937 595 171",
+  phone: "+34 609 33 90 50",
   email: "info@food-message.com",
   address: "Barcelona, Spain",
   whatsapp: "34609339050",
