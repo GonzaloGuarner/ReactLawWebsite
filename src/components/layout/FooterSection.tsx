@@ -1,9 +1,12 @@
 import React from 'react';
 import { Mail, MessageCircle, Linkedin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import ContactInfo from '../ui/ContactInfo';
 import siteConfig from '../../config/siteConfig';
 
 const FooterSection: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="!bg-secondary text-gray-300 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,13 +17,13 @@ const FooterSection: React.FC = () => {
               FOOD MESSAGE
             </h3>
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} All rights reserved.
+              © {new Date().getFullYear()} {t('footer.rights')}
             </p>
           </div>
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
-              Contacto
+              {t('footer.contactTitle')}
             </h4>
             <ContactInfo
               phone={siteConfig.contact.phone}
@@ -32,7 +35,7 @@ const FooterSection: React.FC = () => {
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-wider text-gray-400 mb-4">
-              También en
+              {t('footer.socialTitle')}
             </h4>
             <div className="flex space-x-4">
               <a
@@ -55,6 +58,7 @@ const FooterSection: React.FC = () => {
               </a>
             </div>
           </div>
+
         </div>
       </div>
     </footer>

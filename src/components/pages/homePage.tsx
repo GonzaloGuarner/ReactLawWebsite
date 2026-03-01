@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import siteConfig from '../../config/siteConfig';
+import { useSiteConfig } from '../../config/useSiteConfig';
 
 import Seo from '../layout/Seo';
 import NavBar from '../layout/NavBar';
@@ -17,14 +17,11 @@ import FloatingButtons from '../ui/FloatingButtons';
 import { useDynamicTitle } from '../hooks/useDynamicTitle';
 import { useScrollDetection } from '../hooks/useScrollDetection';
 
-
-// =================================================================
-// MAIN COMPONENT 
-// =================================================================
 const HomePage: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
   const isScrolled = useScrollDetection(30);
+  const siteConfig = useSiteConfig();
 
   useDynamicTitle(siteConfig.siteName);
 

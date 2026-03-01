@@ -1,31 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import type { ContactFormProps } from '../../types/types';
 import InputField from './InputField';
 
-
 const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
-    message: ''
+    message: '',
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-    if (!formData.email.includes('@')) {
-      //setError('Please enter a valid email address.'); setError is not found or does not exist
-      return;
-    }
-    e.preventDefault(); // Added preventDefault for correct form behavior
-    alert('Thank you for your message. We will contact you soon.');
+    e.preventDefault();
+    if (!formData.email.includes('@')) return;
+    alert(t('contact.successMessage'));
     setFormData({ name: '', phone: '', email: '', message: '' });
     onClose();
   };
@@ -42,28 +37,51 @@ const ContactForm: React.FC<ContactFormProps> = ({ onClose }) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-xl shadow-2xl p-8 max-w-lg w-full">
         <div className="flex justify-between items-center mb-6">
-          <h3 className="text-2xl font-bold text-gray-800">Contacto</h3>
+          <h3 className="text-2xl font-bold text-gray-800">{t('contact.formTitle')}</h3>
           <button onClick={onClose} className="text-gray-400 hover:text-gray-600">
             <X size={24} />
           </button>
         </div>
 
         <form className="space-y-5" onSubmit={handleSubmit}>
-          <InputField name="name" placeholder="Your Name" value={formData.name} onChange={handleInputChange} />
-          <InputField name="phone" type="tel" placeholder="Phone Number" value={formData.phone} onChange={handleInputChange} />
-          <InputField name="email" type="email" placeholder="Email Address" value={formData.email} onChange={handleInputChange} />
-          <InputField name="message" placeholder="How can we help?" value={formData.message} onChange={handleInputChange} textarea />
+          <InputField
+            name="name"
+            placeholder={t('contact.namePlaceholder')}
+            value={formData.name}
+            onChange={handleInputChange}
+          />
+          <InputField
+            name="phone"
+            type="tel"
+            placeholder={t('contact.phonePlaceholder')}
+            value={formData.phone}
+            onChange={handleInputChange}
+          />
+          <InputField
+            name="email"
+            type="email"
+            placeholder={t('contact.emailPlaceholder')}
+            value={formData.email}
+            onChange={handleInputChange}
+          />
+          <InputField
+            name="message"
+            placeholder={t('contact.messagePlaceholder')}
+            value={formData.message}
+            onChange={handleInputChange}
+            textarea
+          />
 
           <button
             type="submit"
             className="w-full bg-primary text-white py-3 rounded-lg font-semibold shadow hover:bg-primary_focus transition-all"
           >
-            SEND MESSAGE
+            {t('contact.sendButton')}
           </button>
         </form>
       </div>
     </div>
-
   );
 };
+
 export default ContactForm;

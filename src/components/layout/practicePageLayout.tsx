@@ -1,22 +1,27 @@
+// src/components/layout/PracticePageLayout.tsx
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import NavBar from '../layout/NavBar';
-import FooterSection from '../layout/FooterSection';
-import { SectionContainer } from '../layout/SectionContainer';
-import { useScrollDetection } from '../hooks/useScrollDetection';
+import NavBar from './NavBar';
+import FooterSection from './FooterSection';
+import { SectionContainer } from './SectionContainer';
 import { SeparatorBar } from '../ui/SeparatorBar';
+import { useScrollDetection } from '../hooks/useScrollDetection';
 import { useSiteConfig } from '../../config/useSiteConfig';
 
-const DerechoConsumoPage: React.FC = () => {
+interface Card {
+  title: string;
+  body: string;
+}
+
+interface PracticePageLayoutProps {
+  title: string;
+  intro: string;
+  cards: Card[];
+}
+
+const PracticePageLayout: React.FC<PracticePageLayoutProps> = ({ title, intro, cards }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isScrolled = useScrollDetection(30);
-  const { t } = useTranslation();
   const siteConfig = useSiteConfig();
-
-  const cards = t('derechoConsumo.cards', { returnObjects: true }) as Array<{
-    title: string;
-    body: string;
-  }>;
 
   return (
     <div className="flex flex-col min-h-screen bg-page_white text-gray-800">
@@ -27,22 +32,26 @@ const DerechoConsumoPage: React.FC = () => {
         navigation={siteConfig.navigation}
       />
 
-      <main className="flex-grow pt-24 pb-20">
+      <main className="flex-grow pt-36 pb-20">
         <SectionContainer className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-primary mb-2">
-            {t('derechoConsumo.title')}
+          <h1 className="text-4xl font-sans font-bold text-primary mb-2">
+            {title}
           </h1>
           <SeparatorBar />
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            {t('derechoConsumo.intro')}
+            {intro}
           </p>
         </SectionContainer>
 
         <SectionContainer className="grid md:grid-cols-2 gap-10">
           {cards.map((card, i) => (
             <div key={i} className="bg-gray-50 rounded-xl p-8 shadow hover:shadow-md transition">
-              <h2 className="text-2xl font-semibold text-primary mb-3">{card.title}</h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">{card.body}</p>
+              <h2 className="text-2xl font-sans font-semibold text-primary mb-3">
+                {card.title}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {card.body}
+              </p>
             </div>
           ))}
         </SectionContainer>
@@ -53,4 +62,4 @@ const DerechoConsumoPage: React.FC = () => {
   );
 };
 
-export default DerechoConsumoPage;
+export default PracticePageLayout;

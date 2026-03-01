@@ -1,5 +1,6 @@
 // src/components/ui/ContactInfo.tsx
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 type Props = {
@@ -22,8 +23,10 @@ const ContactInfo: React.FC<Props> = ({
   whatsapp,
   compact = false,
   layout = 'grid',
-  className = ''
+  className = '',
 }) => {
+  const { t } = useTranslation();
+
   const telHref = phone ? `tel:${normalizePhone(phone)}` : undefined;
   const mailHref = email ? `mailto:${email}` : undefined;
   const whatsHref = whatsapp
@@ -36,19 +39,12 @@ const ContactInfo: React.FC<Props> = ({
   const items = [
     phone && (
       <div key="phone" className="flex items-start space-x-3">
-        <Phone
-          size={22}
-          className="text-primary mt-1 flex-shrink-0"
-          aria-hidden="true"
-        />
+        <Phone size={22} className="text-primary mt-1 flex-shrink-0" aria-hidden="true" />
         <div>
           {!compact && (
-            <h4 className={`font-semibold ${baseTitleColor} mb-1`}>Teléfono</h4>
+            <h4 className={`font-semibold ${baseTitleColor} mb-1`}>{t('contact.phone')}</h4>
           )}
-          <a
-            href={telHref}
-            className={`${baseTextColor} hover:text-primary transition-colors`}
-          >
+          <a href={telHref} className={`${baseTextColor} hover:text-primary transition-colors`}>
             {phone}
           </a>
         </div>
@@ -56,19 +52,12 @@ const ContactInfo: React.FC<Props> = ({
     ),
     email && (
       <div key="email" className="flex items-start space-x-3">
-        <Mail
-          size={22}
-          className="text-primary mt-1 flex-shrink-0"
-          aria-hidden="true"
-        />
+        <Mail size={22} className="text-primary mt-1 flex-shrink-0" aria-hidden="true" />
         <div>
           {!compact && (
-            <h4 className={`font-semibold ${baseTitleColor} mb-1`}>Email</h4>
+            <h4 className={`font-semibold ${baseTitleColor} mb-1`}>{t('contact.email')}</h4>
           )}
-          <a
-            href={mailHref}
-            className={`${baseTextColor} hover:text-primary transition-colors break-all`}
-          >
+          <a href={mailHref} className={`${baseTextColor} hover:text-primary transition-colors break-all`}>
             {email}
           </a>
         </div>
@@ -76,14 +65,10 @@ const ContactInfo: React.FC<Props> = ({
     ),
     address && (
       <div key="address" className="flex items-start space-x-3">
-        <MapPin
-          size={22}
-          className="text-primary mt-1 flex-shrink-0"
-          aria-hidden="true"
-        />
+        <MapPin size={22} className="text-primary mt-1 flex-shrink-0" aria-hidden="true" />
         <div>
           {!compact && (
-            <h4 className={`font-semibold ${baseTitleColor} mb-1`}>Ubicación</h4>
+            <h4 className={`font-semibold ${baseTitleColor} mb-1`}>{t('contact.address')}</h4>
           )}
           <p className={`${baseTextColor}`}>{address}</p>
         </div>
@@ -91,14 +76,10 @@ const ContactInfo: React.FC<Props> = ({
     ),
     whatsapp && (
       <div key="whatsapp" className="flex items-start space-x-3">
-        <MessageCircle
-          size={22}
-          className="text-primary mt-1 flex-shrink-0"
-          aria-hidden="true"
-        />
+        <MessageCircle size={22} className="text-primary mt-1 flex-shrink-0" aria-hidden="true" />
         <div>
           {!compact && (
-            <h4 className={`font-semibold ${baseTitleColor} mb-1`}>WhatsApp</h4>
+            <h4 className={`font-semibold ${baseTitleColor} mb-1`}>{t('contact.whatsapp')}</h4>
           )}
           <a
             href={whatsHref}
@@ -106,19 +87,16 @@ const ContactInfo: React.FC<Props> = ({
             rel="noopener noreferrer"
             className={`${baseTextColor} hover:text-primary transition-colors`}
           >
-            Disponible para consulta directa
+            {t('contact.whatsappLabel')}
           </a>
         </div>
       </div>
-    )
+    ),
   ].filter(Boolean);
 
-  // Layout
   if (layout === 'grid') {
     return (
-      <div
-        className={`grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-10 ${className}`}
-      >
+      <div className={`grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-10 ${className}`}>
         {items}
       </div>
     );

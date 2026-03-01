@@ -1,11 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import type { PracticeCardProps } from '../../types/types';
 import { useNavHandler } from '../hooks/useNavHandler';
 
 export const PracticeCard: React.FC<PracticeCardProps> = ({ practice }) => {
-
+  const { t } = useTranslation();
   const handleClick = useNavHandler();
-
 
   return (
     <div className="relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
@@ -30,7 +30,7 @@ export const PracticeCard: React.FC<PracticeCardProps> = ({ practice }) => {
           onClick={() => handleClick(practice.href)}
           className="mt-4 text-white border border-white px-4 py-1 text-sm rounded hover:bg-white hover:text-gray-800 transition-colors self-start"
         >
-          Ir a sección →
+          {t('practices.goToSection')}
         </button>
       </div>
     </div>

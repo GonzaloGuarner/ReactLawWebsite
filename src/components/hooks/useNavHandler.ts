@@ -7,14 +7,19 @@ export const useNavHandler = () => {
 
   return (href: string) => {
     if (!href) return;
+
     if (href.startsWith('/')) return navigate(href);
+
     if (href.startsWith('#')) {
       if (location.pathname === '/') {
         const el = document.querySelector(href);
         if (el) el.scrollIntoView({ behavior: 'smooth' });
-      } else navigate('/', { state: { scrollTo: href } });
+      } else {
+        navigate('/', { state: { scrollTo: href } });
+      }
       return;
     }
+
     if (href.startsWith('http')) window.open(href, '_blank', 'noopener');
   };
 };

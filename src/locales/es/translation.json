@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "profile": "Perfil",
+    "services": "Servicios",
+    "publications": "Publicaciones",
+    "contact": "Contacto",
+    "derechoAlimentario": "Derecho Alimentario",
+    "derechoMercantil": "Derecho Mercantil",
+    "derechoConsumo": "Derecho de Consumo"
+  },
+  "hero": {
+    "title": "FOOD MESSAGE",
+    "tagline": "Asesoría legal y regulatoria especializada en el sector alimentario",
+    "cta": "Programe una consulta"
+  },
+  "welcome": {
+    "description": "Food Message es un proyecto liderado por Silvia Bañares, abogada especializada en derecho alimentario, publicidad y consumo, con más de veinticinco años de experiencia asesorando a empresas, organizaciones y agencias del sector alimentario en el ámbito legal y regulatorio."
+  },
+  "profile": {
+    "sectionTitle": "Perfil",
+    "lawyerTitle": "Abogada especializada en derecho alimentario, mercantil y del consumo.",
+    "languagesLabel": "Lenguas",
+    "education": [
+      "Abogada en ejercicio por el Ilustre Colegio de Abogados de Barcelona (ICAB).",
+      "Doctora en Derecho Mercantil por la Universidad de Barcelona.",
+      "Miembro del Ilustre Colegio de Abogados de Barcelona (ICAB).",
+      "Associació Catalana Ciències de l'Alimentació (ACCA).",
+      "Asociación Iberoamericana para el Derecho Alimentario (AIBADA).",
+      "Centro Europeo para el Derecho del Consumo."
+    ],
+    "bio": "Silvia Bañares es abogada experta en derecho alimentario, publicidad y consumo. Es licenciada y doctora en Derecho Mercantil por la Universidad de Barcelona y mediadora inscrita en el Colegio de Abogados de Barcelona. Actualmente ejerce en Barcelona, centrando su actividad en el derecho alimentario y la docencia. Durante más de veinticinco años ha asesorado a empresas alimentarias, instituciones y agencias de publicidad. Ha publicado diversos artículos y libros sobre legislación alimentaria e imparte conferencias y seminarios sobre las últimas novedades en el sector."
+  },
+  "practices": {
+    "sectionTitle": "Servicios",
+    "goToSection": "Ir a sección →",
+    "areas": [
+      {
+        "title": "Derecho Alimentario",
+        "description": "Cumplimiento de la normativa alimentaria española y europea: etiquetado, seguridad, autorizaciones y declaraciones nutricionales."
+      },
+      {
+        "title": "Derecho Mercantil",
+        "description": "Asesoramiento jurídico para sociedades, contratos comerciales, y resolución de conflictos empresariales."
+      },
+      {
+        "title": "Derecho de Consumo",
+        "description": "Defensa y cumplimiento de la normativa de consumo, cláusulas abusivas, publicidad y derechos del consumidor."
+      }
+    ]
+  },
+  "contact": {
+    "sectionTitle": "Contacto",
+    "phone": "Teléfono",
+    "email": "Email",
+    "address": "Ubicación",
+    "whatsapp": "WhatsApp",
+    "whatsappLabel": "Disponible para consulta directa",
+    "ctaButton": "¡Escríbenos un mensaje!",
+    "formTitle": "Contacto",
+    "namePlaceholder": "Nombre",
+    "phonePlaceholder": "Teléfono",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "¿En qué podemos ayudarte?",
+    "sendButton": "ENVIAR MENSAJE",
+    "successMessage": "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "contactTitle": "Contacto",
+    "socialTitle": "También en"
+  },
+  "derechoAlimentario": {
+    "title": "Derecho Alimentario",
+    "intro": "Asesoramos a empresas alimentarias en la normativa sectorial que les afecta, así como en todo lo relativo a seguridad alimentaria, etiquetado y promoción de productos, y regulación internacional. Nuestra práctica combina el conocimiento técnico del producto con la precisión jurídica necesaria para garantizar el cumplimiento de la legislación vigente.",
+    "cards": [
+      {
+        "title": "Cumplimiento Normativo",
+        "body": "Ayudamos a las empresas a cumplir con las normativas nacionales y de la Unión Europea en materia de producción, comercialización y distribución de alimentos."
+      },
+      {
+        "title": "Etiquetado y Publicidad",
+        "body": "Asesoramos en el diseño y revisión de etiquetas, declaraciones nutricionales y propiedades saludables; buscamos minimizar los riesgos para las empresas, proteger la salud de los consumidores y garantizar la transparencia de la información alimentaria."
+      },
+      {
+        "title": "Seguridad Alimentaria",
+        "body": "Evaluamos procedimientos de control de calidad, trazabilidad y gestión de riesgos para mantener los más altos estándares de seguridad alimentaria."
+      },
+      {
+        "title": "Regulación Internacional",
+        "body": "Ofrecemos asistencia en importaciones y exportaciones, armonización de normas y cumplimiento con organismos internacionales."
+      }
+    ]
+  },
+  "derechoMercantil": {
+    "title": "Derecho Mercantil",
+    "intro": "Asesoramos a empresas y emprendedores en todos los aspectos del derecho mercantil: constitución, contratos, fusiones, resolución de conflictos y cumplimiento de obligaciones legales.",
+    "cards": [
+      {
+        "title": "Contratos Comerciales",
+        "body": "Redacción, revisión y negociación de contratos nacionales e internacionales."
+      },
+      {
+        "title": "Gobierno Corporativo",
+        "body": "Asistencia en la constitución de sociedades, estatutos, actas y cumplimiento normativo."
+      },
+      {
+        "title": "Resolución de Conflictos",
+        "body": "Representación en litigios comerciales y mediación entre socios o partes contratantes."
+      },
+      {
+        "title": "Fusiones y Adquisiciones",
+        "body": "Asesoramiento integral durante procesos de compraventa y reorganización empresarial de industrias alimentarias."
+      }
+    ]
+  },
+  "derechoConsumo": {
+    "title": "Derecho de Consumo",
+    "intro": "Protegemos los derechos de los consumidores y asesoramos a empresas en prácticas comerciales transparentes, publicidad responsable y resolución de reclamaciones.",
+    "cards": [
+      {
+        "title": "Reclamaciones de Consumo",
+        "body": "Gestión y defensa de reclamaciones individuales o colectivas ante organismos competentes."
+      },
+      {
+        "title": "Publicidad y Prácticas Comerciales",
+        "body": "Revisión de campañas y promociones para garantizar su conformidad con la normativa alimentaria y de consumo."
+      },
+      {
+        "title": "Cláusulas Abusivas",
+        "body": "Identificación y subsanación de cláusulas que vulneren los derechos del consumidor."
+      },
+      {
+        "title": "Protección de Datos y Privacidad",
+        "body": "Asesoramiento sobre tratamiento de datos personales y cumplimiento del RGPD."
+      }
+    ]
+  },
+  "publications": {
+    "title": "Publicaciones",
+    "booksTitle": "Libros",
+    "chaptersTitle": "Capítulos",
+    "articlesTitle": "Artículos",
+    "book1": {
+      "title": "1169 preguntas y respuestas sobre el etiquetado de los alimentos",
+      "edition": "Edición 2015",
+      "authors": "Autores: Silvia Bañares Vilella, Luís González Vaqué",
+      "topics": "Temática:",
+      "topic1": "CIENCIAS SOCIALES / Salud",
+      "topic2": "DERECHO / Derecho administrativo y práctica reguladora",
+      "isbn": "ISBN: 9788494342844 — Editor: Bebookness",
+      "desc1": "Mediante el Reglamento UE 1169/2011, la Unión Europea (UE) se ha impuesto como objetivo mejorar las reglas de etiquetado de los productos alimenticios para que los consumidores dispongan de información esencial, legible y comprensible y puedan comprar dichos productos con conocimiento de causa. Por motivos de seguridad pública, las nuevas disposiciones refuerzan la protección contra los alérgenos y abordan otras cuestiones como la responsabilidad de los productores y comerciantes, etc.",
+      "desc2": "De fácil consulta, esta obra constituye un útil instrumento que servirá para despejar dudas e incógnitas, evitar errores y mejorar el adecuado cumplimiento del complejo sistema de información al consumidor establecido por el nuevo Reglamento comunitario (de aplicación directa en todos los Estados miembros de la UE)."
+    },
+    "book2": {
+      "title": "Alimentos funcionales y alegaciones alimentarias: una aproximación jurídica",
+      "edition": "Edición 2006",
+      "authors": "Autora: Silvia Bañares Vilella",
+      "topics": "Temática:",
+      "topic1": "CIENCIAS SOCIALES / Salud",
+      "topic2": "DERECHO / Derecho administrativo y práctica reguladora",
+      "isbn": "ISBN: 9788496354852 — Editor: Atelier Libros",
+      "desc1": "Los alimentos funcionales despiertan en la actualidad un gran interés científico: las nuevas propiedades de éstos, distintas a sus simples efectos nutritivos y que son consideradas como beneficiosas para la salud, están siendo objeto de unas interesantes líneas de investigación tanto a nivel europeo como internacional.",
+      "desc2": "A su vez, la industria alimentaria se ha hecho eco de estos nuevos avances. La incorporación de estos productos al mercado, así como la utilización de unas nuevas alegaciones alimentarias (tanto en su etiquetado, como en su presentación o publicidad) es un fenómeno de auge creciente.",
+      "desc3": "Un estudio de estas características permitirá no sólo dar respuesta a las cuestiones que hoy en día se formulan, sino también analizar las futuras tendencias legislativas previstas por la Unión Europea en materia de alegaciones alimentarias."
+    },
+    "chapters": [
+      "\"La venta de alimentos por internet ¿qué información debe figurar online?\" en La venta de alimentos online. Thomson Reuters Aranzadi, 2019.",
+      "\"El etiquetado de los productos alimenticios\" en Manual Básico de Derecho Alimentario. Tirant lo Blanch, 2019.",
+      "\"Spain\" en EU Information Regulation 1169/2011. Food Lawyers' Network Worldwide, 2016.",
+      "\"Legislación\" en Probióticos, prebióticos y salud. Sociedad Española de Probióticos y Prebióticos, 2016.",
+      "...y más capítulos publicados en obras colectivas sobre derecho alimentario."
+    ],
+    "articles": [
+      "\"The European Commission establishes the specific compositional and information requirements for total diet replacement for weight control products\". EFFL, 2018.",
+      "\"Alcance de algunas medidas transitorias relativas a las marcas y a las propiedades saludables en los alimentos\". La Ley Unión Europea, 2017.",
+      "\"The European Court of Justice Declares that Regulation Nº 1924/2006 Applies to Health Claims Directed at Health Professionals\". EFFL, 2016.",
+      "\"Probiotics: Stand by or New Opportunities for them?\" EFFL, 2016.",
+      "\"Los probióticos: ¿algo nuevo en el horizonte?\". Centro Europeo para el Derecho del Consumo, 2016.",
+      "...y más de veinte artículos sobre etiquetado, probióticos y declaraciones nutricionales."
+    ]
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "nav": {
+    "profile": "Profile",
+    "services": "Services",
+    "publications": "Publications",
+    "contact": "Contact",
+    "derechoAlimentario": "Food Law",
+    "derechoMercantil": "Commercial Law",
+    "derechoConsumo": "Consumer Law"
+  },
+  "hero": {
+    "title": "FOOD MESSAGE",
+    "tagline": "Specialised legal and regulatory advisory in the food sector",
+    "cta": "Schedule a consultation"
+  },
+  "welcome": {
+    "description": "Food Message is a project led by Silvia Bañares, a lawyer specialising in food law, advertising and consumer law, with over twenty-five years of experience advising companies, organisations and agencies in the food sector on legal and regulatory matters."
+  },
+  "profile": {
+    "sectionTitle": "Profile",
+    "lawyerTitle": "Lawyer specialising in food, commercial and consumer law.",
+    "languagesLabel": "Languages",
+    "education": [
+      "Practising lawyer at the Barcelona Bar Association (ICAB).",
+      "PhD in Commercial Law from the University of Barcelona.",
+      "Member of the Barcelona Bar Association (ICAB).",
+      "Associació Catalana Ciències de l'Alimentació (ACCA).",
+      "Ibero-American Association for Food Law (AIBADA).",
+      "European Centre for Consumer Law."
+    ],
+    "bio": "Silvia Bañares is a lawyer specialising in food law, advertising and consumer law. She holds a degree and PhD in Commercial Law from the University of Barcelona and is a registered mediator at the Barcelona Bar Association. She currently practises in Barcelona, focusing on food law and academic teaching. For over twenty-five years she has advised food companies, institutions and advertising agencies. She has published numerous articles and books on food legislation and delivers lectures and seminars on the latest developments in the sector."
+  },
+  "practices": {
+    "sectionTitle": "Services",
+    "goToSection": "Go to section →",
+    "areas": [
+      {
+        "title": "Food Law",
+        "description": "Compliance with Spanish and European food regulations: labelling, safety, authorisations and nutritional claims."
+      },
+      {
+        "title": "Commercial Law",
+        "description": "Legal advice for companies, commercial contracts, and resolution of business disputes."
+      },
+      {
+        "title": "Consumer Law",
+        "description": "Defence and compliance with consumer regulations, unfair terms, advertising and consumer rights."
+      }
+    ]
+  },
+  "contact": {
+    "sectionTitle": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Location",
+    "whatsapp": "WhatsApp",
+    "whatsappLabel": "Available for direct consultation",
+    "ctaButton": "Send us a message!",
+    "formTitle": "Contact",
+    "namePlaceholder": "Your Name",
+    "phonePlaceholder": "Phone Number",
+    "emailPlaceholder": "Email Address",
+    "messagePlaceholder": "How can we help?",
+    "sendButton": "SEND MESSAGE",
+    "successMessage": "Thank you for your message. We will be in touch soon."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "contactTitle": "Contact",
+    "socialTitle": "Also on"
+  },
+  "derechoAlimentario": {
+    "title": "Food Law",
+    "intro": "We advise food companies on the sector-specific regulations that apply to them, as well as on all matters relating to food safety, labelling and product promotion, and international regulation. Our practice combines in-depth product knowledge with the legal precision required to ensure compliance with current legislation.",
+    "cards": [
+      {
+        "title": "Regulatory Compliance",
+        "body": "We help companies comply with national and European Union regulations on the production, marketing and distribution of food products."
+      },
+      {
+        "title": "Labelling and Advertising",
+        "body": "We advise on the design and review of labels, nutritional declarations and health claims; our aim is to minimise risk for businesses, protect consumer health and ensure transparency of food information."
+      },
+      {
+        "title": "Food Safety",
+        "body": "We assess quality control procedures, traceability and risk management to maintain the highest food safety standards."
+      },
+      {
+        "title": "International Regulation",
+        "body": "We provide assistance with imports and exports, harmonisation of standards and compliance with international bodies."
+      }
+    ]
+  },
+  "derechoMercantil": {
+    "title": "Commercial Law",
+    "intro": "We advise companies and entrepreneurs on all aspects of commercial law: incorporation, contracts, mergers, dispute resolution and compliance with legal obligations.",
+    "cards": [
+      {
+        "title": "Commercial Contracts",
+        "body": "Drafting, review and negotiation of national and international contracts."
+      },
+      {
+        "title": "Corporate Governance",
+        "body": "Assistance with company formation, articles of association, minutes and regulatory compliance."
+      },
+      {
+        "title": "Dispute Resolution",
+        "body": "Representation in commercial litigation and mediation between partners or contracting parties."
+      },
+      {
+        "title": "Mergers and Acquisitions",
+        "body": "Comprehensive advice throughout the sale, purchase and corporate restructuring of food industry businesses."
+      }
+    ]
+  },
+  "derechoConsumo": {
+    "title": "Consumer Law",
+    "intro": "We protect consumer rights and advise companies on transparent commercial practices, responsible advertising and complaint resolution.",
+    "cards": [
+      {
+        "title": "Consumer Claims",
+        "body": "Management and defence of individual or collective claims before competent authorities."
+      },
+      {
+        "title": "Advertising and Commercial Practices",
+        "body": "Review of campaigns and promotions to ensure compliance with food and consumer regulations."
+      },
+      {
+        "title": "Unfair Contract Terms",
+        "body": "Identification and rectification of clauses that infringe consumer rights."
+      },
+      {
+        "title": "Data Protection and Privacy",
+        "body": "Advice on personal data processing and GDPR compliance."
+      }
+    ]
+  },
+  "publications": {
+    "title": "Publications",
+    "booksTitle": "Books",
+    "chaptersTitle": "Chapters",
+    "articlesTitle": "Articles",
+    "book1": {
+      "title": "1169 preguntas y respuestas sobre el etiquetado de los alimentos",
+      "edition": "2015 Edition",
+      "authors": "Authors: Silvia Bañares Vilella, Luís González Vaqué",
+      "topics": "Topics:",
+      "topic1": "SOCIAL SCIENCES / Health",
+      "topic2": "LAW / Administrative law and regulatory practice",
+      "isbn": "ISBN: 9788494342844 — Publisher: Bebookness",
+      "desc1": "Mediante el Reglamento UE 1169/2011, la Unión Europea (UE) se ha impuesto como objetivo mejorar las reglas de etiquetado de los productos alimenticios para que los consumidores dispongan de información esencial, legible y comprensible y puedan comprar dichos productos con conocimiento de causa. Por motivos de seguridad pública, las nuevas disposiciones refuerzan la protección contra los alérgenos y abordan otras cuestiones como la responsabilidad de los productores y comerciantes, etc.",
+      "desc2": "De fácil consulta, esta obra constituye un útil instrumento que servirá para despejar dudas e incógnitas, evitar errores y mejorar el adecuado cumplimiento del complejo sistema de información al consumidor establecido por el nuevo Reglamento comunitario (de aplicación directa en todos los Estados miembros de la UE)."
+    },
+    "book2": {
+      "title": "Alimentos funcionales y alegaciones alimentarias: una aproximación jurídica",
+      "edition": "2006 Edition",
+      "authors": "Author: Silvia Bañares Vilella",
+      "topics": "Topics:",
+      "topic1": "SOCIAL SCIENCES / Health",
+      "topic2": "LAW / Administrative law and regulatory practice",
+      "isbn": "ISBN: 9788496354852 — Publisher: Atelier Libros",
+      "desc1": "Los alimentos funcionales despiertan en la actualidad un gran interés científico: las nuevas propiedades de éstos, distintas a sus simples efectos nutritivos y que son consideradas como beneficiosas para la salud, están siendo objeto de unas interesantes líneas de investigación tanto a nivel europeo como internacional.",
+      "desc2": "A su vez, la industria alimentaria se ha hecho eco de estos nuevos avances. La incorporación de estos productos al mercado, así como la utilización de unas nuevas alegaciones alimentarias (tanto en su etiquetado, como en su presentación o publicidad) es un fenómeno de auge creciente.",
+      "desc3": "Un estudio de estas características permitirá no sólo dar respuesta a las cuestiones que hoy en día se formulan, sino también analizar las futuras tendencias legislativas previstas por la Unión Europea en materia de alegaciones alimentarias."
+    },
+    "chapters": [
+      "\"La venta de alimentos por internet ¿qué información debe figurar online?\" in La venta de alimentos online. Thomson Reuters Aranzadi, 2019.",
+      "\"El etiquetado de los productos alimenticios\" in Manual Básico de Derecho Alimentario. Tirant lo Blanch, 2019.",
+      "\"Spain\" in EU Information Regulation 1169/2011. Food Lawyers' Network Worldwide, 2016.",
+      "\"Legislación\" in Probióticos, prebióticos y salud. Sociedad Española de Probióticos y Prebióticos, 2016.",
+      "...and further chapters published in collective works on food law."
+    ],
+    "articles": [
+      "\"The European Commission establishes the specific compositional and information requirements for total diet replacement for weight control products\". EFFL, 2018.",
+      "\"Alcance de algunas medidas transitorias relativas a las marcas y a las propiedades saludables en los alimentos\". La Ley Unión Europea, 2017.",
+      "\"The European Court of Justice Declares that Regulation Nº 1924/2006 Applies to Health Claims Directed at Health Professionals\". EFFL, 2016.",
+      "\"Probiotics: Stand by or New Opportunities for them?\" EFFL, 2016.",
+      "\"Los probióticos: ¿algo nuevo en el horizonte?\". Centro Europeo para el Derecho del Consumo, 2016.",
+      "...and over twenty articles on labelling, probiotics and nutritional declarations."
+    ]
+  }
+}

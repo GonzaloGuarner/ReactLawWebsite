@@ -2,6 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
+import './i18n'; 
 import { HelmetProvider } from 'react-helmet-async';
 import HomePage from './components/pages/homePage';
 import PublicationsPage from './components/pages/publications';
