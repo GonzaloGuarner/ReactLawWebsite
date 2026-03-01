@@ -2,7 +2,6 @@
 import { useTranslation } from 'react-i18next';
 import type { SiteConfig } from '../types/types';
 import { Mail, MessageCircle, Phone } from 'lucide-react';
-import practiceImage1 from '../assets/images/food-message-logo.png';
 
 const contact = {
   phone: '+34 609 33 90 50',
